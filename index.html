@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Annaamalai | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #000;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .container {
+      max-width: 900px;
+      width: 90%;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 900;
+      margin-bottom: 2rem;
+    }
+    h1 span {
+      color: #e50914;
+    }
+    .profiles {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #fff;
+      transition: transform 0.3s;
+    }
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+      font-weight: 700;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .profile:hover .avatar {
+      border-color: #e50914;
+      transform: scale(1.1);
+    }
+    .label {
+      margin-top: 0.8rem;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hi, I'm Annaamalai — <span>Choose Your Domain</span></h1>
+    <div class="profiles">
+      <a href="#" class="profile">
+        <div class="avatar">🏛️</div>
+        <div class="label">Architecture</div>
+      </a>
+      <a href="#" class="profile">
+        <div class="avatar">📊</div>
+        <div class="label">Analyst</div>
+      </a>
+      <a href="#" class="profile">
+        <div class="avatar">🎬</div>
+        <div class="label">Video Editing</div>
+      </a>
+      <a href="#" class="profile">
+        <div class="avatar">💰</div>
+        <div class="label">Finance</div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
